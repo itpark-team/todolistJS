@@ -10,9 +10,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>sss</h1>
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="script.js"></script>
+
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-lg-9 col-xl-7">
+                <div class="card rounded-3">
+                    <div class="card-body p-4">
+
+                        <h4 class="text-center my-3 pb-3">Планировщик задач</h4>
+
+                        <div class="row justify-content-center align-items-center mb-4 pb-2">
+                            <div class="col-lg-4">
+                                <input type="date" id="input-date-field" class="form-control"/>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" id="input-task-field" class="form-control"
+                                       placeholder="Введите задачу здесь"/>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="submit" class="btn btn-primary" onclick="addTodoItem()">Сохранить</button>
+                            </div>
+                        </div>
+
+                        <div id="table-tasks-div">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
